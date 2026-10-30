@@ -24,8 +24,15 @@ Puede haber socios sin DNI, por ejemplo extranjeros. Una PK nunca puede estar va
 <!--Ejercicio A2
 Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escribe el tipo de relación:
 -->
+1.planes-socios: plan tiene muchos socios y un socio tiene un plan =>1:N
 
+2.socios- tarjetas:un socio tiene una tarjeta, una tarjeta es de un socio => 1:1
 
+3.monitores- clases : un monitor tiene diferentes clases, una clase la da un monitor => 1:N
+
+4.socios-clases: un socio reserva muchas clases, muchas clases tienen muchos socios => N:N
+
+5.monitores-especialidades: un monitor tiene muchas especialidaes, una especialidad la tienen muchos monitores. => N:M
 
 
 
@@ -110,5 +117,81 @@ Para cada caso: haz las dos preguntas, escribe la relación y di en qué tabla v
 7.
 
 8.
+
+
+
+<!--Ejercicio B3
+Para cada instrucción:
+- Antes de ejecutarla, escribe qué crees que pasará y por qué.
+- Ejecútala.
+- Copia la línea del error (tradúcela) y di qué clave lo ha impedido.
+-->
+
+<!--B3.1 Un socio con un plan que no existe-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.2 Un socio con el email de Ana-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.3 Una segunda tarjeta para Ana-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.4 Ana reserva otra vez el Spinning del lunes-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.5 Una reserva para una clase que no existe-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.6 Borrar el plan Básico-->
+- Predicción:
+- Error:
+- Clave:
+
+<!--B3.7 Borrar el plan Mañanas-->
+- Predicción:
+- Resultado:
+
+<!--B3.8 B3.6 falla y B3.7 funciona. Los dos son planes. ¿Por qué?-->
+
+
+
+
+<!--Pregunta B4.11
+En la consulta 6, Ana sale tres veces. ¿Es un error? ¿Por qué ocurre?
+-->
+
+
+
+
+<!--Ejercicio B6 (una o dos frases cada una)
+1. ¿Qué diferencia hay entre una clave primaria y una clave UNIQUE?
+2. ¿Por qué una clave ajena sí puede repetirse?
+3. En una relación 1:N, ¿en qué lado va la clave ajena? ¿Por qué no en el otro?
+4. ¿Qué convierte una relación 1:N en una 1:1?
+5. ¿Por qué una relación N:M necesita una tabla intermedia?
+6. ¿Por qué fecha_reserva está en reservas y no en socios ni en clases?
+-->
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
 
 
