@@ -46,7 +46,7 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 
 1.Un monitor da N clases, Una clase la da 1 monitor, Relacion: N:1
 
-2.
+2.La clave ajena va en la tabla clases porque es el lado del muchos.Se llamaria monitor_id.
 
 3.
 
