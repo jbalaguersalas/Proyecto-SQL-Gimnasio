@@ -44,7 +44,7 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 5. ¿Qué tabla hay que crear primero?
 -->
 
-1.
+1.Un monitor da N clases, Una clase la da 1 monitor, Relacion: N:1
 
 2.
 
