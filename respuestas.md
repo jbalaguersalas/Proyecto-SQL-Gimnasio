@@ -48,7 +48,8 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 
 2.La clave ajena va en la tabla clases porque es el lado del muchos.Se llamaria monitor_id.
 
-3.
+3.id | nombre | clase_id|
+| 1  | Carla  | 1, 4, 7 |,, Falla porque Carla da varias clases y en una celda solo cabe un valor.
 
 4.
 
