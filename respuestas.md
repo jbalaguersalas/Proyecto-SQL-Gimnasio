@@ -111,47 +111,47 @@ Para cada caso: haz las dos preguntas, escribe la relación y di en qué tabla v
 -->
 
 1.
-Preguntas:¿Un pais cuantas ciudades tiene?(muchas),¿Una ciudad cuantos paises tiene?(uno)
+Preguntas:¿Un pais cuantas ciudades tiene?(muchas),¿Una ciudad cuántos paises tiene?(uno)
 Relación: 1:N
 Clave ajena: En la tabala ciudad(pais_id)
 
 2.
-Preguntas:
-Relación:
-Clave ajena:
+Preguntas:¿Una persona cuantos pasaportes?(uno),¿Un pasaporte cuántas personas tiene?(una)
+Relación: 1:1
+Clave ajena: En la tabla pasaporte (persona_id)
 
 3.
-Preguntas:
-Relación:
-Clave ajena:
+Preguntas:¿Un alumno cuantas asignaturas tiene?(muchas)¿Una asignatura cuantos alumnos tiene?(muchos)
+Relación: N:M
+Clave ajena: Se crea una tabla intermedia ejemplo:(matriculas)
 
 
 4.
-Preguntas:
-Relación:
-Clave ajena:
+Preguntas:¿Un cliente cuantos pedidos hace?(muchos), ¿Un pedido cuantos clientes tiene?(uno)
+Relación: 1:N
+Clave ajena: En la tabla pedido (cliente_id)
 
 
 5.
 
-Preguntas:
-Relación:
-Clave ajena:
+Preguntas:¿Una película cuántos actores tiene?(muchos)¿Un actor cuantas peliculas hace?(Muchas)
+Relación: N:M
+Clave ajena: Se crea una tabla intermedia (reparto).En ella se guarda el nombre del personaje.
 
 6.
 
-Preguntas:
-Relación:
-Clave ajena:
+Preguntas:¿Un autor cuantos libros tiene?(muchos)¿Un libro cuantos autores tiene?
+Relación:Depende de si se hace coauditoria entonces, si lo escribe un solo autor es 1:N si son varios autores con coauditoria sera N:M
+Clave ajena: Necesita una tabla intermedia.
 
 7.
-Preguntas:
+Preguntas:¿
 Relación:
 Clave ajena:
 
 
 8.
-Preguntas:
+Preguntas:¿
 Relación:
 Clave ajena:
 
