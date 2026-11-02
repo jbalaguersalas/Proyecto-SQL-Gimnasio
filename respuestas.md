@@ -86,11 +86,15 @@ La clave ajena va en perfiles, porque el perfil no puede existir sin el usuario.
 2. Necesito 3 tablas: monitores, especialidades y la tabla intermedia monitor_especialidades.
 
 
-3.
 
-4.
+3. 
+- **monitores**: `id` (PK), `dni` (UNIQUE), `nombre`, `email` (UNIQUE).
+- **especialidades**: `id` (PK), `nombre` (UNIQUE).
+- **monitor_especialidades**: `id` (PK), `monitor_id` (FK), `especialidad_id` (FK), `UNIQUE (monitor_id, especialidad_id)`.
 
-5.
+4. El `UNIQUE` en la tabla intermedia sirve para que no metamos duplicados tontos; es decir, evita que le asignemos a Carla la especialidad de Yoga dos veces en el sistema.
+
+Ambas son tablas intermedias para resolver una relación N:M con dos claves ajenas. La diferencia es que `reservas` guarda un dato propio de la relación (`fecha_reserva`) y `monitor_especialidades` solo enlaza las dos tablas.
 
 
 
