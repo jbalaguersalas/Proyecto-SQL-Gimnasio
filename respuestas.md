@@ -63,7 +63,7 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 3. Inventa otra relación 1:1 de la vida real (fuera del gimnasio) y di en qué tabla pondrías la clave ajena.
 -->
 
-1.
+1. Si quitásemos el UNIQUE de socio_id, un mismo socio podría tener varias tarjetas. Por ejemplo, Ana (socio 1) tendría dos y eso daria a confusión.
 
 2.
 
