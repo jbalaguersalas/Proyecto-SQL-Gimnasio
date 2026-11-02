@@ -183,8 +183,6 @@ SELECT setval(pg_get_serial_sequence('reservas', 'id'), (SELECT MAX(id) FROM res
 SELECT setval(pg_get_serial_sequence('especialidades', 'id'), (SELECT MAX(id) FROM especialidades));
 SELECT setval(pg_get_serial_sequence('monitor_especialidades', 'id'), (SELECT MAX(id) FROM monitor_especialidades));
 
-
-CREATE DATABASE gimnasio;
 /-- B4.1
 SELECT s.nombre, p.nombre, p.precio_mensual 
 FROM socios s 

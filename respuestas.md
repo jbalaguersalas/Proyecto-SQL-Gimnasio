@@ -220,11 +220,11 @@ En la consulta 6, Ana sale tres veces. ¿Es un error? ¿Por qué ocurre?
 6. ¿Por qué fecha_reserva está en reservas y no en socios ni en clases?
 -->
 
-1.
+1.Las claves primarias sirven para identificar cada registro de una tabla y que no se repita. Por otro lado, las restricciones UNIQUE permiten que determinados datos, como el DNI o el email, no puedan estar duplicados. 
 
-2.
+2.Por que varios registros de una tabla pueden estar relacionados con otra tabla, por ejemplo tener el mismo plan.
 
-3.
+3.La clave ajena va situada en el lado donde hay muchos registros, en este caso en socios, porque varios socios pueden tener el mismo plan. No la ponemos en planes porque un plan puede tener muchos socios y sería más complicado guardar todos ahí. Así, cada socio guarda el número del plan al que está apuntado.
 
 4.
 
