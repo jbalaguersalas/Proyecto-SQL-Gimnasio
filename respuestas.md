@@ -65,9 +65,10 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 
 1. Si quitásemos el UNIQUE de socio_id, un mismo socio podría tener varias tarjetas. Por ejemplo, Ana (socio 1) tendría dos y eso daria a confusión.
 
-2.
+2.Cada una impide una cosa,en este caso tenemos codigo y socio_id, código evita que dos tarjetas tengan el mismo código y socio_id evita que dos socios tenga más de una tarjeta.
 
-3.
+3.Usuario-Perfil: un usuario tiene un perfil y un perfil es de un usuario: 1:1
+La clave ajena va en perfiles, porque el perfil no puede existir sin el usuario.
 
 
 
