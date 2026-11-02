@@ -92,9 +92,9 @@ La clave ajena va en perfiles, porque el perfil no puede existir sin el usuario.
 - |especialidades|: `id` (PK), `nombre` (UNIQUE).
 - |monitor_especialidades|: `id` (PK), `monitor_id` (FK), `especialidad_id` (FK), `UNIQUE   (monitor_id, especialidad_id)`. 
 
-4. El `UNIQUE` en la tabla intermedia sirve para que no metamos duplicados tontos; es decir, evita que le asignemos a Carla la especialidad de Yoga dos veces en el sistema.
+4. El `UNIQUE` en la tabla intermedia sirve para que no metamos duplicados tontos, evita que le asignemos a Carla la especialidad de Yoga dos veces en los datos.
 
-5. Ambas son tablas intermedias para resolver una relación N:M con dos claves ajenas. La diferencia es que `reservas` guarda un dato propio de la relación (`fecha_reserva`) y `monitor_especialidades` solo enlaza las dos tablas.
+5. Las dos sirven para conectar dos cosas que tienen una relación de muchos a muchos usando claves ajenas. La diferencia es que `reservas` guarda una fecha (`fecha_reserva`) porque ese dato importa para la reserva, y la de `monitor_especialidades` en cambio solo une al profe con su especialidad sin más datos.
 
 
 
