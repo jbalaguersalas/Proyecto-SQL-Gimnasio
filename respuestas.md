@@ -80,9 +80,11 @@ La clave ajena va en perfiles, porque el perfil no puede existir sin el usuario.
 5. ¿Qué tienen en común reservas y tu tabla intermedia? ¿En qué se diferencian?
 -->
 
-1.
+1. Un monitor tiene muchas especialidades y una especialidad la tienen muchos monitores → N:M
 
-2.
+
+2. Necesito 3 tablas: monitores, especialidades y la tabla intermedia monitor_especialidades.
+
 
 3.
 
