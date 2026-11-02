@@ -44,16 +44,16 @@ Con el enunciado del apartado 0, haz las dos preguntas para cada pareja y escrib
 5. ¿Qué tabla hay que crear primero?
 -->
 
-1.Un monitor da N clases, Una clase la da 1 monitor, Relacion: N:1
+1. Un monitor da N clases, Una clase la da 1 monitor, Relacion: 1:N
 
-2.La clave ajena va en la tabla clases porque es el lado del muchos.Se llamaria monitor_id.
+2. La clave ajena va en la tabla clases porque es el lado del muchos.Se llamaria monitor_id.
 
-3.id | nombre | clase_id|
+3. id | nombre | clase_id|
 | 1  | Carla  | 1, 4, 7 |,, Falla porque Carla da varias clases y en una celda solo cabe un valor.
 
-4.
+4. El valor debe ser not null por que tiene que  estar un monitor dirigiendo la clase, entonces rellenamos con el valor not null para que no quede vacio.
 
-5.
+5. Primero hay que crear la tabla monitores, porque clases tiene la clave ajena que apunta a ella y no se puede apuntar a una tabla que no existe.
 
 
 
