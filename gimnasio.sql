@@ -234,3 +234,68 @@ SELECT m.nombre AS monitor, e.nombre AS especialidad
 FROM monitores m 
 JOIN monitor_especialidades me ON m.id = me.monitor_id 
 JOIN especialidades e ON me.especialidad_id = e.id;
+
+//--B5.1
+SELECT * FROM socios
+WHERE email = 'luis@gym.com';
+
+UPDATE socios
+SET plan_id = (
+    SELECT id FROM planes WHERE nombre = 'Completo'
+)
+WHERE email = 'luis@gym.com';
+
+//--B5.2
+SELECT * FROM tarjetas
+WHERE codigo = 'TJ-0004';
+
+UPDATE tarjetas
+SET activa = TRUE
+WHERE codigo = 'TJ-0004';
+
+//--b5.3
+SELECT s.nombre, t.codigo
+FROM socios s
+LEFT JOIN tarjetas t ON s.id = t.socio_id
+WHERE s.email = 'diego@gym.com';
+
+INSERT INTO tarjetas (codigo, activa, socio_id)
+VALUES ('TJ-0008', TRUE, (SELECT id FROM socios WHERE email = 'diego@gym.com'));
+
+//--B5.4
+INSERT INTO reservas (socio_id, clase_id, fecha_reserva)
+VALUES (
+    (SELECT id FROM socios WHERE email = 'diego@gym.com'),
+    6,
+    CURRENT_DATE
+);
+
+//--B5.5
+SELECT s.nombre, c.actividad, r.fecha_hora
+FROM reservas r
+JOIN socios s ON r.socio_id = s.id
+JOIN clases c ON r.clase_id = c.id
+WHERE s.email = 'luis@gym.com'
+AND c.id = 2;
+
+DELETE FROM reservas
+WHERE socio_id = (SELECT id FROM socios WHERE email = 'luis@gym.com')
+AND clase_id = 2;
+
+//--B5.6
+SELECT * FROM socios
+WHERE email = 'pablo@gym.com';
+
+DELETE FROM socios
+WHERE email = 'pablo@gym.com';
+
+DELETE FROM reservas
+WHERE socio_id = (SELECT id FROM socios WHERE email = 'pablo@gym.com');
+
+DELETE FROM tarjetas
+WHERE socio_id = (SELECT id FROM socios WHERE email = 'pablo@gym.com');
+
+DELETE FROM socios
+WHERE email = 'pablo@gym.com';
+
+//--He puesto delete from socios al pablo por que queria ver si me dejaba bporrarlo, pero no antes tengo que borrar sus tarjetas y sus reservas para poder elimnarlo.
