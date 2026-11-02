@@ -207,7 +207,7 @@ DELETE 0
 
 <!--Pregunta B4.11
 En la consulta 6, Ana sale tres veces. ¿Es un error? ¿Por qué ocurre?
--->
+-->No es un error que yo sepa, Ana está apuntada a 3 clases individualmente y aparece como 3 veces repetidas.
 
 
 
