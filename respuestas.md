@@ -145,15 +145,15 @@ Relación:Depende de si se hace coauditoria entonces, si lo escribe un solo auto
 Clave ajena: Necesita una tabla intermedia.
 
 7.
-Preguntas:¿
-Relación:
-Clave ajena:
+Preguntas:¿Un usuario cuantos pedidos hace?(muchos)¿Un pedido cuantos usuarios tiene?(uno)
+Relación:1:N
+Clave ajena: En la tabla pedido (user_id)
 
 
 8.
-Preguntas:¿
-Relación:
-Clave ajena:
+Preguntas:¿Un pedido cuantos productos tiene?(muchos)¿Un productos en cuantos pedidos aparece?(muchos)
+Relación: N:M
+Clave ajena: Se crea tabla intermedia  (detalle_pedido),En ella guardamos los datos o el precio de los productos del pedido.
 
 
 <!--Ejercicio B3
