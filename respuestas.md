@@ -164,42 +164,45 @@ Para cada instrucción:
 -->
 
 <!--B3.1 Un socio con un plan que no existe-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción: Marcará error dado que le designamos algo que no existe.
+- Error: insert or update on table "socios" violates foreign key constraint "socios_plan_id_fkey"
+- Clave: Key (plan_id)=(99) is not present in table "planes"
 
 <!--B3.2 Un socio con el email de Ana-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción:Como ana y su email ya estan registrados no se puede designar  otro email además de ser UNIQUE
+- Error:duplicate key value violates unique constraint "socios_email_key"
+- Clave: Key (email)=(ana@gym.com) already exists.
 
 <!--B3.3 Una segunda tarjeta para Ana-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción: No se pueden tener 2 tarjetas.Relacion 1:1 socio_id es algo unique
+- Error: duplicate key value violates unique constraint "tarjetas_socio_id_key"
+- Clave:  Key (socio_id)=(1) already exists.
 
 <!--B3.4 Ana reserva otra vez el Spinning del lunes-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción: Ana ya esta reservada, marcará error.
+- Error:  duplicate key value violates unique constraint "reservas_socio_id_clase_id_key"
+- Clave:  Key (socio_id, clase_id)=(1, 1) already exists.
 
 <!--B3.5 Una reserva para una clase que no existe-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción: Designamos una clase que no existe por lo cual marcará error.
+- Error: insert or update on table "reservas" violates foreign key constraint "reservas_clase_id_fkey".
+- Clave: Key (clase_id)=(50) is not present in table "clases".
 
 <!--B3.6 Borrar el plan Básico-->
-- Predicción:
-- Error:
-- Clave:
+- Predicción: Hay socios apuntados al plan, y ademas no dejará borrarlo,estará protegido.
+- Error:update or delete on table "planes" violates foreign key constraint "socios_plan_id_fkey" on table "socios".
+- Clave: Key (id)=(1) is still referenced from table "socios".
 
 <!--B3.7 Borrar el plan Mañanas-->
-- Predicción:
-- Resultado:
+- Predicción:Nadie tiene el plan de mañanas entonces podrá borrarse supongo.
+- Resultado:gimnasio=# DELETE FROM planes WHERE nombre = 'Mañanas';
+DELETE 1
+gimnasio=# DELETE FROM planes WHERE nombre = 'Mañanas';
+DELETE 0
 
 <!--B3.8 B3.6 falla y B3.7 funciona. Los dos son planes. ¿Por qué?-->
 
-
+- B3.6 falla por que tiene socios úsandolo y B3.7 funciona por que ningun socio ni depende ni esta apuntado .
 
 
 <!--Pregunta B4.11
