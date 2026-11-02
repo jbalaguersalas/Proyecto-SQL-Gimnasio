@@ -88,9 +88,9 @@ La clave ajena va en perfiles, porque el perfil no puede existir sin el usuario.
 
 
 3. 
-- **monitores**: `id` (PK), `dni` (UNIQUE), `nombre`, `email` (UNIQUE).
-- **especialidades**: `id` (PK), `nombre` (UNIQUE).
-- **monitor_especialidades**: `id` (PK), `monitor_id` (FK), `especialidad_id` (FK), `UNIQUE (monitor_id, especialidad_id)`.
+- |monitores|: `id` (PK), `dni` (UNIQUE), `nombre`, `email` (UNIQUE).
+- |especialidades|: `id` (PK), `nombre` (UNIQUE).
+- |monitor_especialidades|: `id` (PK), `monitor_id` (FK), `especialidad_id` (FK), `UNIQUE   (monitor_id, especialidad_id)`. 
 
 4. El `UNIQUE` en la tabla intermedia sirve para que no metamos duplicados tontos; es decir, evita que le asignemos a Carla la especialidad de Yoga dos veces en el sistema.
 
