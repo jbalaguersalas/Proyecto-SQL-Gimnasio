@@ -110,36 +110,50 @@ Para cada caso: haz las dos preguntas, escribe la relación y di en qué tabla v
 8. Furniro: pedido – producto (Order – Product). ¿Qué datos guardarías en la tabla intermedia?
 -->
 
-1.Preguntas:¿Un pais cuantas ciudades tiene?(muchas),¿Una ciudad cuantos paises tiene?(uno)
+1.
+Preguntas:¿Un pais cuantas ciudades tiene?(muchas),¿Una ciudad cuantos paises tiene?(uno)
 Relación: 1:N
 Clave ajena: En la tabala ciudad(pais_id)
 
 2.
-
-
+Preguntas:
+Relación:
+Clave ajena:
 
 3.
-
+Preguntas:
+Relación:
+Clave ajena:
 
 
 4.
-
+Preguntas:
+Relación:
+Clave ajena:
 
 
 5.
 
-
+Preguntas:
+Relación:
+Clave ajena:
 
 6.
 
-
+Preguntas:
+Relación:
+Clave ajena:
 
 7.
-
+Preguntas:
+Relación:
+Clave ajena:
 
 
 8.
-
+Preguntas:
+Relación:
+Clave ajena:
 
 
 <!--Ejercicio B3
